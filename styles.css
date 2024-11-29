@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Section */
+main {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Video Container */
+#video-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+video,
+canvas {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  background: #000;
+}
+
+/* Gesture Recognition */
+#gesture {
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 640px;
+}
+
+#gesture h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#gesture p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Gesture Explanation */
+#gesture-explanation {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 640px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+/* Gesture Guide */
+#gesture-guide {
+  margin-top: 40px;
+  width: 90%;
+  max-width: 640px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#gesture-guide h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+#gesture-guide ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#gesture-guide li {
+  font-size: 1.25rem;
+  margin: 10px 0;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#gesture-guide li strong {
+  color: #ffcc00;
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sign Language Translator</h1>
+  </header>
+  <main>
+    <div id="video-container">
+      <video id="webcam" autoplay playsinline></video>
+      <canvas id="output"></canvas>
+    </div>
+    <div id="gesture">
+      <h2>Recognized Gesture:</h2>
+      <p id="gesture-name">None</p>
+    </div>
+    <div id="gesture-explanation">
+      <p>No gesture detected</p>
+    </div>
+    <div id="gesture-guide">
+      <h3>Gesture Guide:</h3>
+      <ul>
+        <li><strong>Thumbs Up:</strong> Good</li>
+        <li><strong>Thumbs Down:</strong> Bad</li>
+        <li><strong>Palm Open:</strong> Stop</li>
+        <li><strong>Fist:</strong> Hello</li>
+        <li><strong>Peace:</strong> Peace</li>
+        <li><strong>OK Sign:</strong> Okay</li>
+        <!-- Add more gestures here -->
+      </ul>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <script src="hackathon.js"></script>
+</body>
+</html>
